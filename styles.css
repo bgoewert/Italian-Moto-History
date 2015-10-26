@@ -31,11 +31,12 @@
   border-top: 1px solid #999999;
   border-bottom: 1px solid #999999;
   background-color: #eeeeee;
-  font-size: 28px;
+  font-size: 20px;
   font-family: serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 10px;
 }
 
 .nav a{
