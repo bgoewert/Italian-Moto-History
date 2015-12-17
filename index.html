@@ -4,39 +4,56 @@
     <meta charset="UTF-8"/>
 	<meta name="description" content="The history Italian motorcycles and scooters"/>
     <meta name="keywords" content="ducati, ducati history, history of ducati, italian motorcycle, motorcycles in italy, moto guzzi history, aprilia history, vespa history, benelli history"/>
-    <meta name="robots" content="index, follow"/>
+	<meta name="author" content="Brennan Goewert"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	  
-	<link rel="stylesheet" href="styles.css"/>
-	<script src="scripts.js"></script>
-	<script rel="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script rel ="text/javascript" scr="/storage/emulated/0/AppProjects/MyWebsite/fancybox/jquery.fancybox.js"></script>
+	<link rel="stylesheet" href="theme-italian-moto.css"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
 	
 	<title>Italian Moto History</title>
   </head>	
   
   <body>
 	
-	<header>
+	<!--<header>
 	<div class="header">
 	  <a href="index.html"><h1>Italian Moto History</h1></a>
-	  <h2>The Motorcycles and Scooters of Italy</h2>
+	  <h2>The Motorcycles and Scooters of Italy</h2>-->
 	  
-	  <div class="nav">
-			<a class="nav_btn" href="moto_guzzi.html">Moto Guzzi</a>
-			<a class="nav_btn" href="ducati.html">Ducati</a>
-			<a class="nav_btn" href="mv_agusta.html">MV Agusta</a>
-			<a class="nav_btn" href="aprilia.html">Aprilia</a>
-			<a class="nav_btn" href="benelli.html">Benelli</a>
-			<a class="nav_btn" href="vespa.html">Vespa</a>
-			<a class="nav_btn" href="lambretta.html">Lambretta</a>
-	  </div>
-	</div>
-	</header>
+	  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+					<span class="sr-only">Toggle navigation</span>
+       	 			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Italian Moto History</a>
+			</div>
+			  
+	  		<div class="collapse navbar-collapse" id="navbar-collapse-main">
+		  		<ul class="nav navbar-nav navbar-left">
+					<li><a class="nav_btn" href="moto_guzzi.html">Moto Guzzi</a></li>
+					<li><a class="nav_btn" href="ducati.html">Ducati</a></li>
+					<li><a class="nav_btn" href="mv_agusta.html">MV Agusta</a></li>
+					<li><a class="nav_btn" href="aprilia.html">Aprilia</a></li>
+					<li><a class="nav_btn" href="benelli.html">Benelli</a></li>
+					<li><a class="nav_btn" href="vespa.html">Vespa</a></li>
+					<li><a class="nav_btn" href="lambretta.html">Lambretta</a></li>
+		  		</ul>
+	  		</div>
+		</div>
+	  </nav>
+	<!--</div>
+	</header>-->
 
 	
-	<div class="body">
+	<div class="container-fluid">
 	  
-	  <div id="welcome"><h3>Welcome!</h3>
+	  <div class="jumbotron">
+		 <h3>Welcome!</h3>
 	    <h4> Learn about the history of two wheeled Italian transportaion.</h4>
 	  </div>
 	  
@@ -70,12 +87,15 @@
 	  </div>
     </div>
     
-	<div class="footer"> 
-		<div class="copy">
-			&copy; Brennan Goewert
+	<footer>
+		<div class="container">
+			<p class="text-center">Copyright &copy; 2015 Brennan Goewert</p>
 		</div>
-	</div>
+	</footer>
 	
 	<script src="scripts.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script rel ="text/javascript" src="/storage/emulated/0/AppProjects/MyWebsite/fancybox/jquery.fancybox.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>		
