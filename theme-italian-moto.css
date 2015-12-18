@@ -1,3 +1,9 @@
+@media (max-width:767px){
+	#alert-info{
+		visibility: hidden;
+	}
+}
+
 .navbar-brand{
 	border-right: 3px solid #ff0000;
 	border-bottom-right-radius: 50px;
