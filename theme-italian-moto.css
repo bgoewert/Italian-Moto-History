@@ -10,6 +10,13 @@
 	border-top-right-radius: 50px;
 }
 
+
+/*pad-section*/
+.pad-section{
+    padding: 75px;
+}    
+/*end pad-section*/
+
 #nav{
   border-bottom: 2px solid #ff0000;
 }
