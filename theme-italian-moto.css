@@ -10,6 +10,14 @@
 	border-top-right-radius: 50px;
 }
 
+.img-responsive{
+    margin: 0 auto;
+}
+
+.row-padding{
+    padding: 40px 0;
+}
+
 #nav{
   border-bottom: 2px solid #ff0000;
 }
