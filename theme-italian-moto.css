@@ -28,4 +28,8 @@ body{
 	#alert-info{
 		visibility: hidden;
 	}
+	
+        .page-header img{
+	  width: 25%;
+	}
 }
