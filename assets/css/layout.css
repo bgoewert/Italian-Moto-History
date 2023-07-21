@@ -1,9 +1,40 @@
+/* ------ Defaults ------ */
+
 :root {
-	--body-spacing: 3em;
+	--body-spacing: 3rem;
 	--content-width: 1024px;
 }
 
-/* ------ Main Layout ------ */
+nav { 
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+/* ------ Header ------ */
+
+header {
+	margin-bottom: var(--body-spacing);
+}
+
+header .italy-flag,
+header .italy-flag::before,
+header .italy-flag::after { height: 10px; }
+
+header nav {
+	margin: 1.5rem;
+}
+
+nav div { display: flex; gap: 2rem; justify-content: center; }
+nav div#menu-left { justify-content: right; }
+nav div#menu-right { justify-content: left; }
+
+nav a { color: inherit; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+/* ------ Main Content ------ */
 
 body {
 	display: flex;
@@ -17,51 +48,49 @@ main {
 	margin: auto;
 }
 
-/* ------ Header ------ */
-
-header {
-	margin-bottom: var(--body-spacing);
-}
-
-header .italy-flag,
-header .italy-flag::before,
-header .italy-flag::after { height: 10px; }
-
-nav {
-	margin: 1.5em;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
-	gap: var(--body-spacing);
-}
-
-nav div { display: flex; gap: 2em; justify-content: center; }
-nav div#menu-left { justify-content: right; }
-nav div#menu-right { justify-content: left; }
-
-nav a { color: inherit; text-decoration: none; }
-nav a:hover { text-decoration: underline; }
-
 /* ------ Footer ------ */
 
 footer {
 	margin-top: var(--body-spacing);
 	width: 100%;
 }
+footer nav {
+	margin: unset;
+}
 
 footer > div:not(.italy-flag) {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	padding: 1em 1em 0 1em;
+	padding: 1rem;
 	max-width: var(--content-width);
 	margin: auto;
-	width: 100%;
 }
 
-footer nav {
-	margin: unset;
-	display: flex;
-	gap: 2em;
+footer > div:not(.italy-flag) > p { margin: 0; }
+
+/* ------ Tablet ------ */
+@media only screen and (max-width: 800px) {
+
+	/* ------ Header ------ */
+	
+	header nav {
+		display: grid;
+		grid-template-areas:
+		"title title" 
+		"menu1 menu2";
+		gap: 0.875rem 2rem;
+	}
+	nav div { grid-area: title; }
+	nav div#menu-left { grid-area: menu1; }
+	nav div#menu-right { grid-area: menu2; }
+
+	/* ------ Footer ------- */
+
+	footer > div:not(.italy-flag) {
+		flex-direction: column;
+		align-content: center;
+		text-align: center;
+	}
+	footer > div:not(.italy-flag) > p { margin: revert; }
 }
