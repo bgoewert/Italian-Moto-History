@@ -2,99 +2,134 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="The history Italian motorcycles and scooters" />
-    <meta name="keywords" content="ducati, ducati history, history of ducati, italian motorcycle, motorcycles in italy, moto guzzi history, aprilia history, vespa history, benelli history"
-    />
-    <meta name="author" content="Brennan Goewert" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="stylesheet" href="theme-italian-moto.css" />
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Italian Moto History</title>
+
+    <meta name="author" content="Brennan Goewert">
+    <meta name="description" content="The history Italian motorcycles and scooters">
+    
+    <!-- Add keywords for search engines. -->
+    <meta name="keywords" content="ducati, moto guzzi, aprilia, vespa, benelli, ducati history, history of ducati, italian motorcycles, motorcycles from italy, italian motorcycle history">
+    
+    <!-- Tell search engines and crawlers to not index because we are not ready for that yet. -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Load async scripts first. -->
+    <script src="assets/js/main.js" async></script>
+
+    <!-- Load style resources. -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link rel="stylesheet" href="assets/css/layout-home.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div id="nav" class="container-fluid">
-
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Italian Moto History</a>
+    <header>
+        <div class="italy-flag"></div>
+        <nav>
+            <div id="menu-left">
+                <a href="">Manufacturers</a>
+                <a href="">Events</a>
             </div>
-
-            <div class="collapse navbar-collapse" id="navbar-collapse-main">
-                <ul class="nav navbar-nav navbar-left">
-                    <li><a class="nav_btn" href="moto_guzzi.html">Moto Guzzi</a></li>
-                    <li><a class="nav_btn" href="ducati.html">Ducati</a></li>
-                    <li><a class="nav_btn" href="mv_agusta.html">MV Agusta</a></li>
-                    <li><a class="nav_btn" href="aprilia.html">Aprilia</a></li>
-                    <li><a class="nav_btn" href="benelli.html">Benelli</a></li>
-                    <li><a class="nav_btn" href="vespa.html">Vespa</a></li>
-                    <li><a class="nav_btn" href="lambretta.html">Lambretta</a></li>
-                </ul>
+            <div>
+                <a href="index.html" id="site-title">Italian Moto History</a>
             </div>
-
-        </div>
-    </nav>
-
-    <div class="container-fluid">
-
-        <div class="page-header">
-            <h1>Welcome!<small><br/>Learn about the history of Italian two wheeled transportaion.</small></h1>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-                <p>Italians have always been a leader in art and design. The name that first comes to mind that emphasizes the art
-                    and design of Italian history is Leonardo Da Vinci. During his time he was technologically ahead of the rest
-                    of the world. From the 19th century to today Italy has been one of the leaders in automotive and motorcycle
-                    design. Companies like Lamborghini, Ferrari, Ducati, and Vespa are a few examples of this. Their beautiful
-                    designs of four and two-wheeled vehicles are a testament to the craftsmanship they can achieve. However,
-                    this is not about what auto and Moto designs Italians can create. It's about the two-wheeled machines they
-                    have already manufactured.
-                </p>
-                <p>
-                    The first of these creations was by a bicycle maker named Eduardo Bianchi. Bianchi made Italy's first motorcycle when he
-                    attached a motor to one of his pedal powered bicycles in the late 1800's. From there he delve into other
-                    areas of manufacturing including airplanes, cars and other various things. Several other companies followed
-                    suit in making motor powered bicycles after Bianchi's invention to supply the rising demand.
-                </p>
+            <div id="menu-right">
+                <a href="">Museums</a>
+                <a href="">About</a>
             </div>
-        </div>
-        <div id="alert-info" class="row">
-            <div class="col-sm-1 col-md-2"></div>
-
-            <div class="col-sm-10 col-md-8 text-center">
-
-                <img class="img-responsive img-rounded" src="http://s.petrolicious.com/2015/editorial/03-mar/twowheel/italian-two-wheel-01.jpg"
-                alt="1974 Ducati 750 Super Sport">
-
-                <cite>1974 Ducati 750ss - <a href="http://petrolicious.com/art-of-the-italian-two-wheel">Petrolicious</a></cite>
-
-            </div>
-
-            <div class="col-sm-1 col-md-2"></div>
-
-        </div>
-    </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="welcome">
+            <h1>Welcome!</h1>
+            <h3>Learn about the history of Italian two wheeled transportation.</h3>
+            <p>Italians have always been a leader in art and design. The name that first comes to mind that emphasizes the art
+                and design of Italian history is Leonardo Da Vinci. During his time he was technologically ahead of the rest
+                of the world. From the 19th century to today Italy has been one of the leaders in automotive and motorcycle
+                design. Companies like Lamborghini, Ferrari, Ducati, and Vespa are a few examples of this. Their beautiful
+                designs of four and two-wheeled vehicles are a testament to the craftsmanship they can achieve. However,
+                this is not about what auto and Moto designs Italians can create. It's about the two-wheeled machines they
+                have already manufactured.
+            </p>
+            <p>
+                The first of these creations was by a bicycle maker named Eduardo Bianchi. Bianchi made Italy's first motorcycle when he
+                attached a motor to one of his pedal powered bicycles in the late 1800's. From there he delve into other
+                areas of manufacturing including airplanes, cars and other various things. Several other companies followed
+                suit in making motor powered bicycles after Bianchi's invention to supply the rising demand.
+            </p>
+        </section>
+        <section id="upcoming-events">
+            <!-- Events source: https://www.eventbrite.com/d/mo--st-louis/motorcycle/?page=1 -->
+            <h4>Upcoming Events</h4>
+            <ul>
+                <li>
+                    <article>
+                        <h5>
+                            <a target="_blank" href="https://www.eventbrite.com/e/10th-annual-arnold-police-officers-association-car-bike-show-registration-668907549487?aff=ebdssbdestsearch&from=b93541b5278e11eeab39c23419b1da72">
+                            10th Annual Arnold Police Officers Association Car & Bike Show
+                            </a>
+                        </h5>
+                        <section>
+                            <p>Time: <time>Saturday, Sep 16, 8am–3pm CDT</time></p>
+                            <p>Location: <address>
+                                Arnold City Park<br>
+                                2400 Bradley Beach Road<br>
+                                Arnold, MO<br>
+                                63010
+                            </address></p>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h5>
+                            <a target="_blank" href="https://www.eventbrite.com/e/motorcycles-by-moonlight-tickets-679695245777?aff=ebdssbdestsearch">
+                            Motorcycles at Moonlight
+                            </a>
+                        </h5>
+                        <section>
+                            <p>Time: <time>Friday, Oct 6</time></p>
+                            <p>Location: <address>
+                                Barber Vintage Motorsports Museum<br>
+                                6030 Barber Motorsports Parkway<br>
+                                Leeds, AL<br>
+                                35094
+                            </address></p>
+                        </section>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="manufacturers">
+            <a href=""><img src="assets/images/Logo_Aprilia.svg" alt="Aprilia logo" title="Learn more about Aprilia"></a>
+            <a href=""><img src="assets/images/Logo_Ducati_678x720.png" alt="Ducati logo" title="Learn more about Ducati"></a>
+            <a href=""><img src="assets/images/Logo_Moto-Guzzi.svg" alt="Moto Guzzi logo" title="Learn more about Moto Guzzi"></a>
+            <a href=""><img src="assets/images/Logo_MV-Agusta.svg" alt="MV Agusta logo" title="Learn more about MV Agusta"></a>
+            <a href=""><img src="assets/images/Logo_Vespa.svg" alt="Vespa logo"></a>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
-            
+        <div>
+            <nav>
+                <a href="">Privacy</a>
+                <a href="">Legal</a>
+                <a href="">Contact</a>
+            </nav>
+            <p><small><i>Use of manufacturer logos is solely for educational purposes and does not imply endorsement.</i></small></p>
+            <nav>
+                <span>Copyright © <span id="copyright-year">2023</span> <a href="https://bgoewert.com" target="_blank">Brennan Goewert</a></span>
+            </nav>
         </div>
+        <div class="italy-flag"></div>
     </footer>
-
-    <script src="scripts.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script rel="text/javascript" src="/storage/emulated/0/AppProjects/MyWebsite/fancybox/jquery.fancybox.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
 </html>

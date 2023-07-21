@@ -1,0 +1,67 @@
+:root {
+	--body-spacing: 3em;
+	--content-width: 1024px;
+}
+
+/* ------ Main Layout ------ */
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+main {
+	flex: 1 0 auto;
+	max-width: var(--content-width);
+	margin: auto;
+}
+
+/* ------ Header ------ */
+
+header {
+	margin-bottom: var(--body-spacing);
+}
+
+header .italy-flag,
+header .italy-flag::before,
+header .italy-flag::after { height: 10px; }
+
+nav {
+	margin: 1.5em;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: var(--body-spacing);
+}
+
+nav div { display: flex; gap: 2em; justify-content: center; }
+nav div#menu-left { justify-content: right; }
+nav div#menu-right { justify-content: left; }
+
+nav a { color: inherit; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+/* ------ Footer ------ */
+
+footer {
+	margin-top: var(--body-spacing);
+	width: 100%;
+}
+
+footer > div:not(.italy-flag) {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 1em 1em 0 1em;
+	max-width: var(--content-width);
+	margin: auto;
+	width: 100%;
+}
+
+footer nav {
+	margin: unset;
+	display: flex;
+	gap: 2em;
+}
