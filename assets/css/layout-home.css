@@ -45,7 +45,8 @@ main section {
     gap: var(--body-spacing);
     margin: var(--body-spacing) 0;
 }
-#manufacturers a {
+#manufacturers span {
+    display: inline-block;
     flex: 1 0 25%;
     align-self: center;
     text-align: center;
