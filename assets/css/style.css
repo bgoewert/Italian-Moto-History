@@ -1,3 +1,9 @@
+:root {
+    --italy-white: #F4F5F0;
+    --italy-green: #008C45;
+    --italy-red: #CD212A;
+}
+
 /* ------ Default Styles ------ */
 
 body {
@@ -5,15 +11,22 @@ body {
 	font-family: Roboto, Helvetica, sans-serif;
 }
 
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1.325em; }
+h5 { font-size: 1.125em; }
+h6 { font-size: 1em; }
+
 .italy-flag {
     display: flex;
 	align-self: center;
-    background-color: #F4F5F0;
+    background-color: var(--italy-white);
     height: 100%;
     width: 33.33%;
 }
 .italy-flag::before {
-    background-color: #008C45;
+    background-color: var(--italy-green);
     content: "";
     height: 100%;
     width: 33.33%;
@@ -22,7 +35,7 @@ body {
     display: block;
 }
 .italy-flag::after {
-    background-color: #CD212A;
+    background-color: var(--italy-red);
     content: "";
     height: 100%;
     width: 33.33%;
@@ -33,6 +46,6 @@ body {
 
 /* ------ Footer ------ */
 footer {
-    font-size: 0.75rem;
-	border-top: 1px solid black;
+    font-size: 0.75em;
+    background-color: white;
 }

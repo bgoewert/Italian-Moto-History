@@ -1,12 +1,19 @@
 :root {
-	--body-spacing: 4rem;
+	--body-spacing: 3em;
+	--content-width: 1024px;
 }
 
 /* ------ Main Layout ------ */
 
-main,
-footer > div {
-	max-width: 1024px;
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+main {
+	flex: 1 0 auto;
+	max-width: var(--content-width);
 	margin: auto;
 }
 
@@ -21,44 +28,43 @@ header .italy-flag::before,
 header .italy-flag::after { height: 10px; }
 
 nav {
-	margin: 1.5rem;
+	margin: 1.5em;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
-	gap: 5rem;
+	gap: 5em;
 }
 
-nav div { display: flex; gap: 2rem; justify-content: center; }
+nav div { display: flex; gap: 2em; justify-content: center; }
 nav div#menu-left { justify-content: right; }
 nav div#menu-right { justify-content: left; }
 
 nav a { color: inherit; text-decoration: none; }
 nav a:hover { text-decoration: underline; }
 
-nav #site-title {
-	font-size: 36px;
-}
-
 /* ------ Footer ------ */
 
 footer {
 	margin-top: var(--body-spacing);
-	margin-bottom: 0.75rem;
 	width: 100%;
-	position: fixed;
-	bottom: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 0.75em;
 }
 
-footer > div {
+footer > div:not(.italy-flag) {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	padding-top: 1rem;
+	padding-top: 1em;
+	max-width: var(--content-width);
+	margin: auto;
+	width: 100%;
 }
 
 footer nav {
 	margin: unset;
 	display: flex;
-	gap: 2rem;
+	gap: 2em;
   }

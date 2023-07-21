@@ -1,29 +1,59 @@
+/* Header */
+nav #site-title {
+	font-size: 36px;
+}
+
+/* Main Content */
+
 main {
     display: grid;
-    gap: 1.5rem;
+    gap: 1.5em;
     grid-template-areas: "wel wel wel evt"
                          "mfg mfg mfg mfg";
 }
 main section {
-    padding: 1rem;
+    padding: 1em;
 }
 #welcome {
     grid-area: wel;
     /* grid-column: 1 / span 5; */
 }
+#welcome h3 {
+    font-size: ;
+}
 #upcoming-events {
     grid-area: evt;
-    border-left: 1px solid black;
-    padding-left: 1rem;
+    border-left: 2px solid var(--italy-red, black);
+    padding-left: 1em;
 }
 #upcoming-events ul {
     list-style: none;
     padding: unset;
 }
+#upcoming-events ul li h5 {
+    font-size: 1em;
+}
 #upcoming-events ul li section {
     padding: unset;
-    font-size: 0.875rem;
+    font-size: 0.875em;
 }
 #manufacturers {
     grid-area: mfg;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--body-spacing);
+    margin: var(--body-spacing) 0;
 }
+#manufacturers a {
+    flex: 1 0 25%;
+    align-self: center;
+    text-align: center;
+}
+#manufacturers img {
+    width: 200px;
+}
+
+/* Footer */
+footer .italy-flag,
+footer .italy-flag::before,
+footer .italy-flag::after { height: 5px; }

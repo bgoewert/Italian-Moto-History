@@ -1,3 +1,2 @@
-body {
-    margin: unset;
-}
+body { margin: unset; }
+html, body { height: 100%; }
