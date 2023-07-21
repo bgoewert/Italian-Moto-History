@@ -1,0 +1,29 @@
+main {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: "wel wel wel evt"
+                         "mfg mfg mfg mfg";
+}
+main section {
+    padding: 1rem;
+}
+#welcome {
+    grid-area: wel;
+    /* grid-column: 1 / span 5; */
+}
+#upcoming-events {
+    grid-area: evt;
+    border-left: 1px solid black;
+    padding-left: 1rem;
+}
+#upcoming-events ul {
+    list-style: none;
+    padding: unset;
+}
+#upcoming-events ul li section {
+    padding: unset;
+    font-size: 0.875rem;
+}
+#manufacturers {
+    grid-area: mfg;
+}

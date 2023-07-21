@@ -1,0 +1,38 @@
+/* ------ Default Styles ------ */
+
+body {
+	color: black;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.italy-flag {
+    display: flex;
+	align-self: center;
+    background-color: #F4F5F0;
+    height: 100%;
+    width: 33.33%;
+}
+.italy-flag::before {
+    background-color: #008C45;
+    content: "";
+    height: 100%;
+    width: 33.33%;
+    position: absolute;
+    left: 0;
+    display: block;
+}
+.italy-flag::after {
+    background-color: #CD212A;
+    content: "";
+    height: 100%;
+    width: 33.33%;
+    position: absolute;
+    right: 0;
+    display: block;
+}
+
+/* ------ Footer ------ */
+footer {
+    font-size: 0.75rem;
+	border-top: 1px solid black;
+}
