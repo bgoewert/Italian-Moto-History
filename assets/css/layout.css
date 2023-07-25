@@ -31,9 +31,6 @@ nav div { display: flex; gap: 2rem; justify-content: center; }
 nav div#menu-left { justify-content: right; }
 nav div#menu-right { justify-content: left; }
 
-nav a { color: inherit; text-decoration: none; }
-nav a:hover { text-decoration: underline; }
-
 /* ------ Main Content ------ */
 
 body {

@@ -52,6 +52,9 @@ nav #site-title {
 	font-size: 36px;
 }
 
+nav a { color: inherit; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
 /* ------ Main Content ------- */
 
 main > article > header {
