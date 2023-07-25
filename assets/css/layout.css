@@ -45,6 +45,10 @@ main {
 	margin: auto;
 }
 
+figure video {
+	width: 100%;
+}
+
 /* ------ Footer ------ */
 
 footer {
