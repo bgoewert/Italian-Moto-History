@@ -18,6 +18,8 @@ h4 { font-size: 1.325rem; }
 h5 { font-size: 1.125rem; }
 h6 { font-size: 1rem; }
 
+img { max-width: 100%; }
+
 .italy-flag {
     display: flex;
 	align-self: center;
@@ -50,7 +52,25 @@ nav #site-title {
 	font-size: 36px;
 }
 
+/* ------ Main Content ------- */
+
+main > article > header {
+    display: flex;
+    flex-direction: column;
+}
+
+main > article > header > img { max-height: 200px; }
+
+main > article section {
+    columns: 2;
+}
+
+main > article figure {
+    break-inside: avoid;
+}
+
 /* ------ Footer ------ */
+
 footer {
     font-size: 0.75rem;
     background-color: white;
