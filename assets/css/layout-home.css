@@ -1,8 +1,3 @@
-/* Header */
-nav #site-title {
-	font-size: 36px;
-}
-
 /* Main Content */
 
 main {
@@ -55,11 +50,6 @@ main section {
 #manufacturers img {
     width: 200px;
 }
-
-/* Footer */
-footer .italy-flag,
-footer .italy-flag::before,
-footer .italy-flag::after { height: 5px; }
 
 /* ------ Tablet ------ */
 @media only screen and (max-width: 800px) {

@@ -44,8 +44,18 @@ h6 { font-size: 1rem; }
     display: block;
 }
 
+/* ------ Header ------ */
+
+nav #site-title {
+	font-size: 36px;
+}
+
 /* ------ Footer ------ */
 footer {
     font-size: 0.75rem;
     background-color: white;
 }
+
+footer .italy-flag,
+footer .italy-flag::before,
+footer .italy-flag::after { height: 5px; }
