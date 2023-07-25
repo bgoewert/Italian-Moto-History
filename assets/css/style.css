@@ -72,6 +72,9 @@ main > article figure {
     break-inside: avoid;
 }
 
+dt { font-weight: bold; }
+
+
 /* ------ Footer ------ */
 
 footer {
