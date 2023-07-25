@@ -16,7 +16,7 @@ Required components of the pages include:
 - [x] Grid Layout
 - [ ] Audio
 - [x] Video
-- [ ] CSS Animation
+- [x] CSS Animation
 - [x] JavaScript Date
 - [ ] JavaScript other
 
