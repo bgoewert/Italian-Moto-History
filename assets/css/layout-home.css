@@ -86,8 +86,4 @@ main {
     main {
         grid-template-areas: "wel" "evt" "mfg";
     }
-    html,body {
-		overflow-x: hidden;
-        max-width: 100%;
-	}
 }
