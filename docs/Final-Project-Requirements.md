@@ -9,7 +9,7 @@ Required components of the pages include:
 - [x] Consistent main navigation
 - [x] Association with external style sheet (.css file)
 - [x] CSS – basic, pseudo, and enhanced selectors
-- [ ] Form
+- [x] Form
 - [ ] Table
 - [x] Media Query
 - [x] Flexbox Layout

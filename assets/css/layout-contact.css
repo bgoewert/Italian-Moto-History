@@ -1,0 +1,18 @@
+main > section {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input[type=submit] {
+    margin-top: 1rem;
+}

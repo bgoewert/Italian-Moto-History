@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Italian Moto History</title>
+    <title>Italian Moto History | Aprilia</title>
 
     <meta name="author" content="Brennan Goewert">
     <meta name="description" content="The history Italian motorcycles and scooters">
-    
+
     <!-- Add keywords for search engines. -->
     <meta name="keywords" content="Ducati, Moto Guzzi, Aprilia, Vespa, Benelli, Ducati history, history of Ducati, Italian motorcycles, motorcycles from Italy, Italian motorcycle history">
-    
+
     <!-- Tell search engines and crawlers to not index because we are not ready for that yet. -->
     <meta name="robots" content="noindex, nofollow">
 
@@ -25,7 +25,12 @@
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Load page specific resources. -->
+    <link rel="stylesheet" href="assets/css/layout-contact.css">
+    <script src="assets/js/contact.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="italy-flag"></div>
@@ -45,17 +50,28 @@
     </header>
 
     <main>
-        <article>
-            <header>
-                <h1>Legal</h1>
-            </header>
-            <p>This is an educational project. <a href="https://github.com/bgoewert/Italian-Moto-History" target="_blank">View the project repository on GitHub.</a></p>
-            <p>Any use of logos, images, or other content, is solely for educational purposes and does not imply endorsement or malicious intent.</p>
-            <p>Most content was gathered from Wikipedia and re-worded.</p>
-            <p>All images (except logos), audio, and video, contains attribution.</p>
-            <p>In order to request that any content be removed, please email <a href="mailto:contact@bgoewert.com">contact@bgoewert.com</a>.</p>
-            <!-- TODO: Add citations for content. -->
-        </article>
+        <header>
+            <h1>Contact</h1>
+        </header>
+        <section>
+            <p>Please contact us for any of the following reasons:</p>
+            <ul>
+                <li><p>There is an event that I would like to have listed.</p></li>
+                <li><p>Incorrect information listed on a page.</p></li>
+                <li><p>I would like to add a museum location.</p></li>
+            </ul>
+        </section>
+        <section>
+            <form id="contact-form" method="post">
+                <label for="reply-to">Your Email Address:</label>
+                <input type="email" id="reply-to" name="reply-to">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+                <label for="body">Message:</label>
+                <textarea name="body" id="body" cols="30" rows="10"></textarea>
+                <input type="submit" value="submit">
+            </form>
+        </section>
     </main>
 
     <footer>
@@ -65,7 +81,8 @@
                 <a href="legal.html">Legal</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            <p><small><em>Use of manufacturer logos is solely for educational purposes and does not imply endorsement.</em></small></p>
+            <p><small><em>Use of manufacturer logos is solely for educational purposes and does not imply
+                        endorsement.</em></small></p>
             <nav>
                 <span>Copyright &copy; <span id="copyright-year">2023</span> <a href="https://bgoewert.com" target="_blank">Brennan Goewert</a></span>
             </nav>
