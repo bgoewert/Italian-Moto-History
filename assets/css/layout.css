@@ -19,12 +19,6 @@ header {
 	margin-bottom: var(--body-spacing);
 }
 
-header .italy-flag,
-header .italy-flag::before,
-header .italy-flag::after {
-	height: 10px;
-}
-
 header nav {
 	margin: 1.5rem;
 }

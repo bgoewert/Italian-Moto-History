@@ -48,6 +48,12 @@ img { max-width: 100%; }
 
 /* ------ Header ------ */
 
+header .italy-flag,
+header .italy-flag::before,
+header .italy-flag::after {
+	height: 10px;
+}
+
 nav #site-title {
 	font-size: 36px;
 }
