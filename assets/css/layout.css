@@ -5,7 +5,7 @@
 	--content-width: 1024px;
 }
 
-nav { 
+nav {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
@@ -21,15 +21,27 @@ header {
 
 header .italy-flag,
 header .italy-flag::before,
-header .italy-flag::after { height: 10px; }
+header .italy-flag::after {
+	height: 10px;
+}
 
 header nav {
 	margin: 1.5rem;
 }
 
-nav div { display: flex; gap: 2rem; justify-content: center; }
-nav div#menu-left { justify-content: right; }
-nav div#menu-right { justify-content: left; }
+nav div {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+}
+
+nav div#menu-left {
+	justify-content: right;
+}
+
+nav div#menu-right {
+	justify-content: left;
+}
 
 /* ------ Main Content ------ */
 
@@ -45,6 +57,11 @@ main {
 	margin: auto;
 }
 
+main header,
+main section {
+	padding: 0 1rem;
+}
+
 figure video {
 	width: 100%;
 }
@@ -55,11 +72,12 @@ footer {
 	margin-top: var(--body-spacing);
 	width: 100%;
 }
+
 footer nav {
 	margin: unset;
 }
 
-footer > div:not(.italy-flag) {
+footer>div:not(.italy-flag) {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
@@ -68,30 +86,60 @@ footer > div:not(.italy-flag) {
 	margin: auto;
 }
 
-footer > div:not(.italy-flag) > p { margin: 0; }
+footer>div:not(.italy-flag)>p {
+	margin: 0;
+}
 
 /* ------ Tablet ------ */
 @media only screen and (max-width: 800px) {
 
+	body {
+		font-size: 14px;
+	}
+
 	/* ------ Header ------ */
-	
+	header {
+		margin-bottom: 1rem;
+	}
+
 	header nav {
 		display: grid;
 		grid-template-areas:
-		"title title" 
-		"menu1 menu2";
+			"title title"
+			"menu1 menu2";
 		gap: 0.875rem 2rem;
 	}
-	nav div { grid-area: title; }
-	nav div#menu-left { grid-area: menu1; }
-	nav div#menu-right { grid-area: menu2; }
+
+	nav div {
+		grid-area: title;
+	}
+
+	nav div#menu-left {
+		grid-area: menu1;
+	}
+
+	nav div#menu-right {
+		grid-area: menu2;
+	}
+
+	/* ------ Main Content ------ */
+
+	main h1,
+	main h2,
+	main h3,
+	main h4 {
+		margin-top: 0.5rem;
+	}
 
 	/* ------ Footer ------- */
 
-	footer > div:not(.italy-flag) {
+	footer>div:not(.italy-flag) {
 		flex-direction: column;
 		align-content: center;
 		text-align: center;
 	}
-	footer > div:not(.italy-flag) > p { margin: revert; }
+
+	footer>div:not(.italy-flag)>p {
+		margin: revert;
+	}
 }
