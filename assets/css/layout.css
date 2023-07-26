@@ -53,8 +53,9 @@ main {
 	margin: auto;
 }
 
-main header,
-main section {
+main > header,
+main > article,
+main > section {
 	padding: 0 1rem;
 }
 
