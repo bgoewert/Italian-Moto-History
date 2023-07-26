@@ -13,11 +13,6 @@ nav {
 	gap: 2rem;
 }
 
-body {
-	overflow-x: hidden;
-	max-width: 100%;
-}
-
 /* ------ Header ------ */
 
 header {
@@ -54,6 +49,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+	overflow-x: hidden;
+	max-width: 100%;
 }
 
 main {
