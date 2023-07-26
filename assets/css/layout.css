@@ -13,7 +13,7 @@ nav {
 	gap: 2rem;
 }
 
-html,body {
+body {
 	overflow-x: hidden;
 	max-width: 100%;
 }
