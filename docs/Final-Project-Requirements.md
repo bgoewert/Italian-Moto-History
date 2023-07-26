@@ -18,7 +18,7 @@ Required components of the pages include:
 - [x] Video
 - [x] CSS Animation
 - [x] JavaScript Date
-- [ ] JavaScript other
+- [x] JavaScript other
 
 Chrome, Mozilla Firefox, and Edge must render each page.
 
