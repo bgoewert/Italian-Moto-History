@@ -31,7 +31,7 @@ while ( date.getMonth() == currentMonth ) {
     // TODO: Create a global list of events to use instead.
     var article = '<article>';
     article += '<h5><a target="_blank" href="https://www.eventbrite.com/e/10th-annual-arnold-police-officers-association-car-bike-show-registration-668907549487?aff=ebdssbdestsearch&from=b93541b5278e11eeab39c23419b1da72">10th Annual Arnold Police Officers Association Car & Bike Show</a></h5>';
-    article += '<section><p>Time:<br><time>8am–3pm CDT</time></p><p>Location: <address>Arnold City Park<br>2400 Bradley Beach Road<br>Arnold, MO<br>63010</address></p</section>';
+    article += '<section><p>Time:<br><time datetime="08:00">8am</time>–<time datetime="15:00">3pm</time> CDT</p><p>Location: <address>Arnold City Park<br>2400 Bradley Beach Road<br>Arnold, MO<br>63010</address></p</section>';
     article += '</article>';
 
     if ( date.getDate() == 16 ) {
