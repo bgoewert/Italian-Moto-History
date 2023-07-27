@@ -1,5 +1,11 @@
 # Website: Italian Moto History
 
+## Additional/Optional Things To Do
+
+- [ ] Add more citations for historical content.
+- [ ] Create an events calendar that can flip through past and future months.
+- [ ] Make event calender responsive to screen sizes. Either by replacing with an `ul` or scale to fit.
+
 ## STLCC IS 139 Final Project
 
 ### Purpose and Goals
