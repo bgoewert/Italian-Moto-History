@@ -11,12 +11,12 @@ body {
 	font-family: Roboto, Helvetica, sans-serif;
 }
 
-h1 { font-size: 2rem; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.25rem; }
-h4 { font-size: 1.325rem; }
-h5 { font-size: 1.125rem; }
-h6 { font-size: 1rem; }
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1.325em; }
+h5 { font-size: 1.125em; }
+h6 { font-size: 1em; }
 
 img { max-width: 100%; }
 
