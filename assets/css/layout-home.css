@@ -13,8 +13,8 @@ main {
     /* grid-column: 1 / span 5; */
 }
 
-#welcome h3 {
-    color: #777;
+#welcome h2 {
+    color: grey;
 }
 
 #upcoming-events {
@@ -29,7 +29,7 @@ main {
     padding: unset;
 }
 
-#upcoming-events ul li h5 {
+#upcoming-events h4 {
     font-size: 1rem;
 }
 
