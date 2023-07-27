@@ -23,7 +23,8 @@ Required components of the pages include:
   - [x] enhanced
 - [x] Form
   - contact.html
-- [ ] Table
+- [x] Table
+  - events.html
 - [x] Media Query
   - assets/css/style.css
   - assets/css/layout.css
@@ -42,6 +43,7 @@ Required components of the pages include:
   - main.js
 - [x] JavaScript other
   - contact.js
+  - calendar.js
 
 Chrome, Mozilla Firefox, and Edge must render each page.
 
