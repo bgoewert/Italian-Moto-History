@@ -1,3 +1,2 @@
 
 main { max-width: var(--content-width-wide); }
-footer>div:not(.italy-flag) { max-width: var(--content-width-wide); }
