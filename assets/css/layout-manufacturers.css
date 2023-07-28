@@ -1,0 +1,22 @@
+/* ------ Single Manufacturer Page ------ */
+
+body#single-manufacturer main > article > header > img {
+    max-height: 200px;
+    display: block;
+    margin: auto;
+}
+
+body#single-manufacturer main > article > section { columns: 2; }
+body#single-manufacturer main > article figure { break-inside: avoid; }
+
+/* ------ Multiple Manufacturers Page ------ */
+
+body#manufacturers article.manufacturer {
+    display: grid;
+    grid-template-areas: "title title title title" "logo desc desc desc";
+    gap: 0 2rem;
+}
+
+body#manufacturers article.manufacturer .mfg-title { grid-area: title; }
+body#manufacturers article.manufacturer .mfg-logo { grid-area: logo; min-width: 200px; }
+body#manufacturers article.manufacturer .mfg-description { grid-area: desc; }
