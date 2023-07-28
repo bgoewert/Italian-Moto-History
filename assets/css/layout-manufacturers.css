@@ -19,11 +19,19 @@ body#manufacturers article.manufacturer {
 }
 
 body#manufacturers article.manufacturer .mfg-title { grid-area: title; }
-body#manufacturers article.manufacturer .mfg-logo { grid-area: logo; min-width: 200px; }
+body#manufacturers article.manufacturer .mfg-logo { grid-area: logo; width: 200px; }
 body#manufacturers article.manufacturer .mfg-description { grid-area: desc; }
 
 /* ------ Table ------ */
 
 @media only screen and (max-width: 800px) {
     body#single-manufacturer main > article > section { columns: 1; }
+}
+
+/* ------ Mobile ------ */
+
+@media only screen and (max-width: 600px) {
+    body#manufacturers article.manufacturer {
+        grid-template-areas: "title desc desc desc" "logo desc desc desc";
+    }   
 }
