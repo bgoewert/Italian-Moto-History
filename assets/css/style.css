@@ -63,9 +63,13 @@ nav a:hover { text-decoration: underline; }
 
 /* ------ Main Content ------- */
 
-main > article > header > img { max-height: 200px; }
+main > article > header > img {
+    max-height: 200px;
+    display: block;
+    margin: auto;
+}
 
-main > article section {
+main > article section.manufacturer {
     columns: 2;
 }
 
