@@ -1,11 +1,8 @@
 /* ------ Single Manufacturer Page ------ */
 
-body#single-manufacturer main > article > header > img {
-    max-height: 200px;
-    display: block;
-    margin: auto;
-}
-
+body#single-manufacturer main > article > header dl img {max-height: 200px;}
+body#single-manufacturer main > article > header dl figure {margin: 0;}
+body#single-manufacturer main > article > header dl dd { padding: 0.5em; }
 body#single-manufacturer main > article > section { columns: 2; }
 body#single-manufacturer main > article figure { break-inside: avoid; }
 
@@ -14,7 +11,7 @@ body#single-manufacturer main > article figure { break-inside: avoid; }
 body#manufacturers article.manufacturer {
     display: grid;
     grid-template-areas: "title title title title" "logo desc desc desc";
-    gap: 0 2rem;
+    gap: 0 2em;
 }
 
 body#manufacturers article.manufacturer .mfg-title { grid-area: title; }
