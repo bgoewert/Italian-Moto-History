@@ -2,7 +2,8 @@
 
 :root {
 	--body-spacing: 3rem;
-	--content-width: 1024px;
+	--content-width: 800px;
+	--content-width-wide: 1024px;
 }
 
 nav {
