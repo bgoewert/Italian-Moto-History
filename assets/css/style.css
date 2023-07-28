@@ -63,11 +63,6 @@ nav a:hover { text-decoration: underline; }
 
 /* ------ Main Content ------- */
 
-main > article > header {
-    display: flex;
-    flex-direction: column;
-}
-
 main > article > header > img { max-height: 200px; }
 
 main > article section {
