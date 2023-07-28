@@ -9,6 +9,7 @@
 body {
 	color: black;
 	font-family: Roboto, Helvetica, sans-serif;
+    background-color: var(--italy-white);
 }
 
 h1 { font-size: 2em; }
@@ -96,7 +97,7 @@ nav a:hover { text-decoration: underline; }
 
 footer {
     font-size: 0.75rem;
-    background-color: white;
+    background-color: var(--italy-white);
 }
 
 footer .italy-flag,
