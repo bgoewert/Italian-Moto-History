@@ -34,7 +34,8 @@ Required components of the pages include:
   - Body
 - [x] Grid Layout
   - index.html
-- [ ] Audio
+- [x] Audio
+  - aprilia.html
 - [x] Video
   - aprilia.html
 - [x] CSS Animation
