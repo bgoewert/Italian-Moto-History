@@ -4,7 +4,11 @@ body#single-manufacturer main > article > header dl img {max-height: 200px;}
 body#single-manufacturer main > article > header dl figure {margin: 0;}
 body#single-manufacturer main > article > header dl dd { padding: 0.5em; }
 body#single-manufacturer main > article > section { columns: 2; }
-body#single-manufacturer main > article figure { break-inside: avoid; }
+body#single-manufacturer main > article figure { 
+    break-inside: avoid;
+    width: fit-content;
+    margin: auto;
+}
 
 /* ------ Multiple Manufacturers Page ------ */
 
@@ -17,3 +21,9 @@ body#manufacturers article.manufacturer {
 body#manufacturers article.manufacturer .mfg-title { grid-area: title; }
 body#manufacturers article.manufacturer .mfg-logo { grid-area: logo; min-width: 200px; }
 body#manufacturers article.manufacturer .mfg-description { grid-area: desc; }
+
+/* ------ Table ------ */
+
+@media only screen and (max-width: 800px) {
+    body#single-manufacturer main > article > section { columns: 1; }
+}
