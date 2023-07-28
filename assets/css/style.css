@@ -28,6 +28,7 @@ dt { font-weight: bold; }
     background-color: var(--italy-white);
     height: 100%;
     width: 33.33%;
+    margin: auto;
 }
 .italy-flag::before {
     background-color: var(--italy-green);
