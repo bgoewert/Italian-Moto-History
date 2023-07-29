@@ -30,12 +30,13 @@ Required components of the pages include:
   - assets/css/layout.css
   - assets/css/layout-home.css
 - [x] Flexbox Layout
-  - Main navigation
-  - Body
+  - layout.css
 - [x] Grid Layout
-  - index.html
+  - layout-home.css
+  - layout-manufacturers.css
 - [x] Audio
   - aprilia.html
+  - vespa.html
 - [x] Video
   - aprilia.html
 - [x] CSS Animation
