@@ -12,15 +12,21 @@ body#single-manufacturer main > article figure {
 
 /* ------ Multiple Manufacturers Page ------ */
 
+body#manufacturers main > section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--body-spacing);
+}
+
 body#manufacturers article.manufacturer {
     display: grid;
-    grid-template-areas: "title title title title" "logo desc desc desc";
-    gap: 0 2em;
+    grid-template-areas: "logo title title title" "logo desc desc desc";
+    gap: 0 var(--body-spacing);
 }
 
 body#manufacturers article.manufacturer .mfg-title { grid-area: title; }
-body#manufacturers article.manufacturer .mfg-logo { grid-area: logo; width: 200px; }
-body#manufacturers article.manufacturer .mfg-description { grid-area: desc; }
+body#manufacturers article.manufacturer .mfg-logo { grid-area: logo; width: 200px; align-self: center; }
+body#manufacturers article.manufacturer .mfg-description { grid-area: desc; align-self: center; }
 
 /* ------ Table ------ */
 
@@ -32,6 +38,13 @@ body#manufacturers article.manufacturer .mfg-description { grid-area: desc; }
 
 @media only screen and (max-width: 600px) {
     body#manufacturers article.manufacturer {
-        grid-template-areas: "title desc desc desc" "logo desc desc desc";
-    }   
+        display: flex;
+        flex-direction: column;
+    }
+    body#manufacturers article.manufacturer .mfg-title {
+        display: none;
+    }
+    body#manufacturers article.manufacturer .mfg-description {
+        text-align: center;
+    }
 }
