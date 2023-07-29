@@ -15,11 +15,6 @@ body#single-manufacturer .citations {
     flex-direction: column;
     gap: 0.5em;
 }
-body#single-manufacturer .citations cite {
-    display: block;
-    max-width: 80vw;
-    overflow-x: scroll;
-}
 
 /* ------ Multiple Manufacturers Page ------ */
 
@@ -48,6 +43,7 @@ body#manufacturers article.manufacturer .mfg-description { grid-area: desc; alig
 /* ------ Mobile ------ */
 
 @media only screen and (max-width: 600px) {
+    
     body#manufacturers article.manufacturer {
         display: flex;
         flex-direction: column;
@@ -57,5 +53,10 @@ body#manufacturers article.manufacturer .mfg-description { grid-area: desc; alig
     }
     body#manufacturers article.manufacturer .mfg-description {
         text-align: center;
+    }
+    body#single-manufacturer .citations cite {
+        display: block;
+        max-width: 80vw;
+        overflow-x: scroll;
     }
 }
