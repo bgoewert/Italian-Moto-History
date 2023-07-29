@@ -1,7 +1,7 @@
 /* ------ Single Manufacturer Page ------ */
 
 body#single-manufacturer main > article > header dl dd { padding: 0.5em 0; }
-body#single-manufacturer main > article > header dl img { max-height: 200px; max-width: 400px; }
+body#single-manufacturer main > article > header dl img { max-height: 200px; width: 100%; object-fit: contain; object-position: left; }
 body#single-manufacturer main > article > header dl figure { margin: 0; }
 body#single-manufacturer main > article > section { columns: 2; }
 body#single-manufacturer main > article figure { 
