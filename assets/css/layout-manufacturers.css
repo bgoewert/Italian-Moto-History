@@ -6,6 +6,7 @@ body#single-manufacturer main > article > header dl figure { margin: 0; }
 body#single-manufacturer main > article > header > figure { margin-top: var(--body-spacing); }
 body#single-manufacturer main > article > header > figure img { max-height: 200px; width: 100%; object-fit: contain; object-position: center; text-align: center; }
 body#single-manufacturer main > article > section { columns: 2; }
+body#single-manufacturer main > article > section p:first-child { margin-top: 0; }
 body#single-manufacturer main > article figure { 
     break-inside: avoid;
     width: fit-content;
