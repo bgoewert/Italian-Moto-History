@@ -10,6 +10,17 @@ body#single-manufacturer main > article figure {
     margin: auto;
 }
 
+body#single-manufacturer .citations {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+body#single-manufacturer .citations cite {
+    display: block;
+    max-width: 80vw;
+    overflow-x: scroll;
+}
+
 /* ------ Multiple Manufacturers Page ------ */
 
 body#manufacturers main > section {
