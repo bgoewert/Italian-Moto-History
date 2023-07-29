@@ -49,5 +49,5 @@ Required components of the pages include:
 
 Chrome, Mozilla Firefox, and Edge must render each page.
 
-- [ ] Chrome / Edge (Both use Chromium)
+- [x] Chrome / Edge (Both use Chromium)
 - [x] Firefox (This is my main browser)
