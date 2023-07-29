@@ -7,6 +7,10 @@ body#single-manufacturer main > article > header > figure { margin-top: var(--bo
 body#single-manufacturer main > article > header > figure img { max-height: 200px; width: 100%; object-fit: contain; object-position: center; text-align: center; }
 body#single-manufacturer main > article > section { columns: 2; }
 body#single-manufacturer main > article > section p:first-child { margin-top: 0; }
+body#single-manufacturer main > article > section { 
+    widows: 5;
+    orphans: 6;
+}
 body#single-manufacturer main > article figure { 
     break-inside: avoid;
     width: fit-content;
