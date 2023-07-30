@@ -50,6 +50,28 @@ dt { font-weight: bold; }
     display: block;
 }
 
+button,
+input[type=button],
+input[type=submit] {
+    background-color: var(--italy-red);
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.175em 1em;
+    max-width: fit-content;
+    border-style: none;
+    border-radius: 2px;
+    box-shadow: #888 2px 2px 6px 0;
+    cursor: pointer;
+}
+
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover {
+    background-color: color-mix(in srgb, var(--italy-red), white 30%);
+    transform: scale(102%);
+}
+
 /* ------ Header ------ */
 
 header .italy-flag,
