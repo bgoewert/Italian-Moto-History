@@ -9,8 +9,9 @@ document.querySelector( 'input[type=submit]' ).addEventListener( 'click', event 
     // Display apologies and real email address.
     var p = document.createElement( 'p' );
     p.innerHTML = `
-        Sorry, this form does not currently submit anywhere.<br>
-        If you really need to contact me, send an email to
+        Thank you for submitting the contact form!<br><br>
+        Sorry, but this form does not currently submit anywhere<br>due to technical and security reasons.<br><br>
+        If you really need to contact me,<br>send an email to
         <a href=\"mailto:contact@bgoewert.com?subject=${form.elements[ 1 ].value}&body=${form.elements[ 2 ].value}\">contact@bgoewert.com</a>.`;
     parent.append( p );
 
