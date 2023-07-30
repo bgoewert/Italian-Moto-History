@@ -49,14 +49,3 @@ In addition to those obvious requirements, the site will also need events and lo
 For multiple reasons, I did not have a desktop program readily available to easily create a wireframe. So, I signed up and verified for an [education license of Figma](https://www.figma.com/education/), which allowed me to create wireframes from a browser and easily share them.
 
 View the Italian Moto History [wireframe(s)](https://www.figma.com/proto/LkXPfzTzF4hj77hKuIIfcd/Italian-Moto-Wireframes?type=design&node-id=1-3&t=Ptei9AJM10UTk4VV-0&scaling=scale-down) and [mockup(s)](https://www.figma.com/proto/Np7jJ7QctA0tzE1be7yH97/Italian-Moto-History?type=design&node-id=1-3&t=ldjKlMjo0dwB1pJq-0&scaling=scale-down).
-
-## Sources
-
-### Logos
-
-- Aprilia - https://commons.wikimedia.org/wiki/File:Aprilia-logo.svg
-- Ducati - https://commons.wikimedia.org/wiki/File:Ducati_red_logo.PNG
-- Moto Guzzi - https://en.wikipedia.org/wiki/File:Moto-Guzzi-Logo-2016.svg
-  - This is a non-free use image sourced from Wikipedia. The use of this logo is solely for educational purposes and does not imply endorsement.
-- MV Agusta - https://commons.wikipedia.org/wiki/File:MV_Agusta_Logo.svg
-- Vespa - https://commons.wikimedia.org/wiki/File:Vespa-logo.svg
