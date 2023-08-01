@@ -30,7 +30,7 @@ while ( date.getMonth() == currentMonth ) {
     // Define the event for this project.
     // TODO: Create a global list of events to use instead.
     var article = '<article>';
-    article += '<h5><a target="_blank" href="https://www.eventbrite.com/e/10th-annual-arnold-police-officers-association-car-bike-show-registration-668907549487?aff=ebdssbdestsearch&from=b93541b5278e11eeab39c23419b1da72">10th Annual Arnold Police Officers Association Car & Bike Show</a></h5>';
+    article += '<a target="_blank" href="https://www.eventbrite.com/e/10th-annual-arnold-police-officers-association-car-bike-show-registration-668907549487?aff=ebdssbdestsearch&from=b93541b5278e11eeab39c23419b1da72">10th Annual Arnold Police Officers Association Car & Bike Show</a>';
     article += '<section><p>Time:<br><time datetime="08:00">8am</time>–<time datetime="15:00">3pm</time> CDT</p><p>Location: <address>Arnold City Park<br>2400 Bradley Beach Road<br>Arnold, MO<br>63010</address></p</section>';
     article += '</article>';
 

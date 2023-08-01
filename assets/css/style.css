@@ -8,16 +8,26 @@
 
 body {
 	color: black;
-	font-family: Roboto, Helvetica, sans-serif;
+	font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
     background-color: var(--italy-white);
 }
 
-h1 { font-size: 2em; }
+h1 { font-size: 2em; margin: 0; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.25em; }
 h4 { font-size: 1.325em; }
 h5 { font-size: 1.125em; }
 h6 { font-size: 1em; }
+
+h1,h2 { font-family: 'Abril Fatface', Georgia, 'Times New Roman', Times, serif; }
+h3,h4,h5,h6 { font-weight: 400; }
+
+h2 + h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
 
 img { max-width: 100%; }
 

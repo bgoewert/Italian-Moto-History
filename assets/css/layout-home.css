@@ -14,10 +14,6 @@ main {
     /* grid-column: 1 / span 5; */
 }
 
-#welcome h2 {
-    color: #666666;
-}
-
 #manufacturers {
     grid-area: mfg;
     display: flex;
