@@ -13,16 +13,17 @@ body {
 }
 
 h1 { font-size: 2em; margin: 0; }
-h2 { font-size: 1.5em; }
+h2 { font-size: 1.625em; }
 h3 { font-size: 1.375em; }
 h4 { font-size: 1.2em; }
 h5 { font-size: 1.125em; }
 h6 { font-size: 1em; }
 
-h1,h2 { font-family: 'Abril Fatface', Georgia, 'Times New Roman', Times, serif; }
+h1 { font-family: 'Abril Fatface', Georgia, 'Times New Roman', Times, serif; }
+h2 { font-weight: 700; }
 h3,h4,h5,h6 { font-weight: 400; }
 
-h2 + h3 {
+h1 + h2 {
     text-transform: uppercase;
     letter-spacing: 0.125rem;
     font-size: 1rem;
@@ -92,6 +93,7 @@ header .italy-flag::after {
 
 nav #site-title {
 	font-size: 36px;
+    font-family: 'Abril Fatface', Georgia, 'Times New Roman', Times, serif;
 }
 
 nav a { color: inherit; text-decoration: none; }
