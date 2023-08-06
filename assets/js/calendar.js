@@ -1,12 +1,27 @@
+"use strict";
+
 var date = new Date( '9/1/2023' ),
     currentYear = date.getFullYear(),
     currentMonth = date.getMonth(),
     currentDay = date.getDay(),
     table = document.getElementsByTagName( 'table' )[ 0 ],
     tbody = table.children[ 1 ],
-    tableMonth = '';
+    tableMonth = '',
+    dayNames = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
 
 // TODO: Create a function that allows creating a table for flipping between months.
+
+var events = [];
+
+events.push( {
+    "title": "10th Annual Arnold Police Officers Association Car & Bike Show",
+    "url": "https://www.eventbrite.com/e/10th-annual-arnold-police-officers-association-car-bike-show-registration-668907549487?aff=ebdssbdestsearch&from=b93541b5278e11eeab39c23419b1da72",
+    "time": {
+        "start": new Date( "16 Sep 2023 08:00:00 CST" ),
+        "end": new Date( "16 Sep 2023 15:00:00 CST" )
+    },
+    "location": "Arnold City Park, 2400 Bradley Beach Road, Arnold, MO, 63010"
+} );
 
 // Set the date to the first day of the month.
 date.setFullYear( currentYear, currentMonth, 1 );
@@ -27,18 +42,23 @@ for ( var i = 0; i < date.getDay(); i++ ) {
 // Fill in the month.
 while ( date.getMonth() == currentMonth ) {
 
-    // Define the event for this project.
-    // TODO: Create a global list of events to use instead.
-    var article = '<article>';
-    article += '<a target="_blank" href="https://www.eventbrite.com/e/10th-annual-arnold-police-officers-association-car-bike-show-registration-668907549487?aff=ebdssbdestsearch&from=b93541b5278e11eeab39c23419b1da72">10th Annual Arnold Police Officers Association Car & Bike Show</a>';
-    article += '<section><p>Time:<br><time datetime="08:00">8am</time>–<time datetime="15:00">3pm</time> CDT</p><p>Location: <address>Arnold City Park<br>2400 Bradley Beach Road<br>Arnold, MO<br>63010</address></p</section>';
-    article += '</article>';
+    var eventList = events.map( e => {
+        if ( e.time.start.getDate() == date.getDate() ) return e;
+    } );
 
-    if ( date.getDate() == 16 ) {
-        tableMonth += '<td data-day="' + date.getDate() + '">' + article + '</td>';
-    } else {
-        tableMonth += '<td data-day="' + date.getDate() + '"></td>';
+    tableMonth += '<td data-day="' + date.getDate() + '" data-dow="' + dayNames[ date.getDay() ] + '">';
+
+    if ( eventList.length > 0 && eventList[ 0 ] !== undefined ) {
+        var list = '<ul>';
+        eventList.forEach( e => {
+            list += `<li><a target="_blank" href="${e.url}">${e.title}</a></li>`;
+        } );
+        list += '</ul>';
+
+        tableMonth += list;
     }
+
+    tableMonth += '</td>';
 
     // If Sunday, start next row.
     if ( date.getDay() % 7 == 6 ) {
