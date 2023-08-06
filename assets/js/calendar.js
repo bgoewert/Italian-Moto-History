@@ -139,4 +139,8 @@ function createEventsCalendar( events ) {
     } );
 }
 
-document.addEventListener( 'DOMContentLoaded', () => createEventsCalendar( events ) );
+if ( document.querySelector( 'table' ) ) {
+    createEventsCalendar( events );
+} else {
+    document.addEventListener( 'DOMContentLoaded', () => createEventsCalendar( events ) );
+}
