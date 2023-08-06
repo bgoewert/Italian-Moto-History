@@ -57,6 +57,7 @@ td ul {
         display: list-item;
         background-color: unset;
         list-style: none;
+        width: 85vw;
     }
     td[data-day]::before { content: attr(data-dow); }
     td[data-day]::after {
