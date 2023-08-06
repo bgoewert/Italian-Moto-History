@@ -54,6 +54,8 @@ main {
 	margin: auto;
 }
 
+main.wide { max-width: var(--content-width-wide); }
+
 main > header,
 main > article,
 main > section {
@@ -62,6 +64,19 @@ main > section {
 
 figure video {
 	width: 100%;
+}
+
+body#page-contact form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+body#page-contact form label {
+    margin-top: 1rem;
+}
+
+body#page-contact form input[type=submit] {
+    margin-top: 1rem;
 }
 
 /* ------ Footer ------ */
