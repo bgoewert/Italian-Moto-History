@@ -22,7 +22,11 @@ h4 { font-size: 1.2em; }
 h5 { font-size: 1.125em; }
 h6 { font-size: 1em; }
 
-h1 { font-family: 'Abril Fatface', Georgia, 'Times New Roman', Times, serif; }
+h1 {
+    font-family: 'Abril Fatface', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
 h2 { font-weight: 700; }
 h3,h4,h5,h6 { font-weight: 400; }
 
