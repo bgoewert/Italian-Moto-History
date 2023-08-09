@@ -46,12 +46,12 @@ body {
 	height: 100%;
 	overflow-x: hidden;
 	max-width: 100%;
+	align-items: center;
 }
 
 main {
 	flex: 1 0 auto;
 	max-width: var(--content-width);
-	margin: auto;
 }
 
 main.wide { max-width: var(--content-width-wide); }
@@ -78,6 +78,14 @@ body#page-contact form label {
 body#page-contact form input[type=submit] {
     margin-top: 1rem;
 }
+
+body#page-museums main > section {
+    display: flex;
+    gap: var(--body-spacing);
+    justify-content: space-between;
+}
+
+body#page-museums #upcoming-events { width: 33.33%;}
 
 /* ------ Footer ------ */
 
